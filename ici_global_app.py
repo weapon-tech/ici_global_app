@@ -5,7 +5,7 @@
 
 
 #pip install plotly
-
+pip install openpyxl
 
 # In[2]:
 
