@@ -196,7 +196,7 @@ app.layout = html.Div(
     children=[
         html.Div(
             children=[
-                html.Img(src="ICI_Global_Logo.png", className="header-logo",
+                html.Img(src="/assets/ICI_Global_Logo.png", className="header-logo",
                         style={"display":"inline-block","align-self":"center",'height':'10%', 'width':'10%'}), # Import ICI Global logo.png
                 #html.H1(children="ICI Global Monitoring Report",  #Main Headings 
                         #className="header-title",
