@@ -54,7 +54,7 @@ tna_data = tna_data.sort_values(by=['Year', 'Quarter'], ascending=True)
 
 
 fig1 = px.bar(tna_data, x="Date", y=["World"],
-               title='Figure 1: Total Global Net Assets - 2008-Q1:2022',
+               title=f"Figure 1: Total Global Net Assets - {tna_data.iloc[0,0]}-{tna_data.iloc[-1,0]}",
                labels=dict(value="$US Trillions", variable="Legend"),
                template="seaborn")
 fig1.update_layout(
@@ -73,7 +73,7 @@ fig1.show()
 
 fig2 = px.bar(tna_data, x="Date", y=["Luxembourg", "Ireland",
                                         "Spain", "France","United Kingdom"],
-              title='Figure 3: Total Net Assets - 2008-Q1:2022<br><sup>Selected European Jurisdictions',
+              title=f"Figure 3: Total Net Assets - {tna_data.iloc[0,0]}-{tna_data.iloc[-1,0]}<br><sup>Selected European Jurisdictions",
               labels=dict(value="$US Trillions", variable="Legend"),
               template="seaborn")
 
@@ -91,7 +91,7 @@ fig2.show()
 
 
 fig3 = px.bar(tna_data, x="Date", y=['Australia','China','Japan','South Korea'],
-              title='Figure 5: Total Net Assets - 2008-Q1:2022<br><sup>Selected Asia-Pacific Jurisdictions',
+              title=f"Figure 5: Total Net Assets - {tna_data.iloc[0,0]}-{tna_data.iloc[-1,0]}<br><sup>Selected Asia-Pacific Jurisdictions",
               labels=dict(value="$US Trillions", variable="Legend"),
               template="seaborn")
 
@@ -122,7 +122,7 @@ flows_data = flows_data.sort_values(by=['Year', 'Quarter'], ascending=True)
 
 
 fig4 = px.bar(flows_data, x="Date", y=["World"],
-               title='Figure 2: Total Global Net Sales - 2008-Q1:2022',
+               title=f"Figure 2: Total Global Net Sales - {tna_data.iloc[0,0]}-{tna_data.iloc[-1,0]}",
                labels=dict(value="$US Trillions", variable="Legend"),
                template="seaborn")
 fig4.update_layout(
@@ -141,7 +141,7 @@ fig4.show()
 
 fig5 = px.bar(flows_data, x="Date", y=["Luxembourg", "Ireland",
                                         "Spain", "France","United Kingdom"],
-               title='Figure 4: Total Net Sales - 2008-Q1:2022<br><sup>Selected European Jurisdictions',
+               title=f"Figure 4: Total Net Sales - {tna_data.iloc[0,0]}-{tna_data.iloc[-1,0]}<br><sup>Selected European Jurisdictions",
                labels=dict(value="$US Billions", variable="Legend"),
                template="seaborn")
 
@@ -159,7 +159,7 @@ fig5.show()
 
 
 fig6 = px.bar(flows_data, x="Date",  y=['China','Japan','South Korea',"India"],
-               title='Figure 6: Total Net Sales - 2008-Q1:2022<br><sup>Selected Asia-Pacific Jurisdictions',
+               title=f"Figure 6: Total Net Sales - {tna_data.iloc[0,0]}-{tna_data.iloc[-1,0]}<br><sup>Selected Asia-Pacific Jurisdictions",
                labels=dict(value="$US Billions", variable="Legend"),
                template="seaborn")
 
